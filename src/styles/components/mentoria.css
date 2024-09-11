@@ -53,6 +53,11 @@
             1px -1px 0 #00000042,
             -1px 1px 0 #00000042;
     }
+    a:hover{
+        transition: ease-in .2s;
+        font-size: 1.1em;
+        background: linear-gradient(50deg, rgb(221, 173, 101) 0%, rgb(207, 132, 19) 63%); 
+    }
 }
 
 

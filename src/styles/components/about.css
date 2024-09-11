@@ -75,7 +75,11 @@
         background: linear-gradient(50deg, rgba(221, 183, 126, 1) 0%, rgba(218, 152, 54, 1) 63%);
         text-shadow: 1px 1px 0 #00000042, -1px -1px 0 #00000042, 1px -1px 0 #00000042, -1px 1px 0 #00000042;
     }
-
+    a:hover{
+        transition: ease-in .2s;
+        font-size: 1.1em;
+        background: linear-gradient(50deg, rgb(221, 173, 101) 0%, rgb(207, 132, 19) 63%); 
+    }
 
     ol {
         display: flex;

@@ -47,6 +47,10 @@
             1px -1px 0 #00000042,
             -1px 1px 0 #00000042;
     }
+    a:hover{
+        transition: ease-in .2s;
+        font-size: 1.1em;
+    }
 
     .sac{
         background-color: var(--branco);
