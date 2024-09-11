@@ -19,12 +19,25 @@
         flex-direction: column;
         align-items: center;
         gap: 3em;
+
+        video{
+            width: 320px;
+            height: 540px;
+            border-radius: 10px;
+            background-image: url(./../../assets/images/player1.webp);
+            background-position: center;
+            background-size: cover;
+        }
+        video:nth-child(2){
+            background-image: url(./../../assets/images/player2.webp);
+        }
     }
 }
 
 .about__container {
     width: 100vw;
     height: 100vh;
+    margin-top: 20em;
 
     h2 {
         text-align: center;
