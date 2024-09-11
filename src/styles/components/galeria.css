@@ -13,3 +13,18 @@
     grid-column-gap: 16px;
     grid-row-gap: 15px;
 }
+
+@media screen and (min-width: 640px){
+    .fotos{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1024px){
+    .fotos{
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
