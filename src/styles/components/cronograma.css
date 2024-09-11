@@ -49,3 +49,13 @@
 
     }
 }
+@media screen and (min-width: 768px){
+    .cronograma {
+        & .cronograma__container {
+            ul {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

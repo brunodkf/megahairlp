@@ -56,14 +56,14 @@
         }
     }
 
-    .icon{
+    .icon {
         width: 40px;
         margin: 0 auto;
         padding: 2em 0;
         display: block;
     }
 
-    p{
+    p {
         margin-bottom: 3em;
     }
 
@@ -77,13 +77,13 @@
     }
 
 
-    ol{
+    ol {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 3em;
 
-        li{
+        li {
             width: 30%;
             background: linear-gradient(50deg, rgb(190, 172, 144) 0%, rgb(230, 177, 97) 63%);
             display: flex;
@@ -92,13 +92,13 @@
             justify-content: center;
             border-radius: 10px;
 
-            .contador__numero{
+            .contador__numero {
                 margin: 0;
                 font-size: 3.5em;
                 color: var(--preto);
             }
 
-            small{
+            small {
                 font-size: 1em;
             }
         }
@@ -106,12 +106,74 @@
 
 }
 
-.about__hero{
+.about__hero {
     margin-top: 3em;
     text-align: center;
 
-    img{
+    img {
         width: 80%;
         margin-bottom: 4em;
+    }
+}
+
+@media screen and (min-width: 640px){
+    .about__hero {
+        img {
+            width: 60%;
+            margin-bottom: 4em;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .video__container {
+        .midias {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    .about__text{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .about__container {
+        display: flex;
+        align-items: center;
+        padding-bottom: 4em;
+
+        .icon {
+            width: 30px;
+            margin: 0;
+            padding: 2em 0;
+            display: block;
+        }
+
+        & ol {
+            justify-content: space-around;
+
+            & li {
+                width: 20%;
+
+                .contador__numero {
+                    margin: 0;
+                    font-size: 2.5em;
+                    color: var(--preto);
+                }
+            }
+        }
+    }
+    .about__text {
+        width: 40%;
+        margin: 0 auto;
+    }
+    .about__hero {
+        img {
+            width: 70%;
+            margin-bottom: 0;
+        }
     }
 }

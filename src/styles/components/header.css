@@ -1,7 +1,7 @@
 .header {
     width: 100vw;
     height: 100vh;
-    background-image: url(./../../assets/images/bg.webp);
+    background-image: url(./../../assets/images/heroMobile.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -55,4 +55,22 @@
         -1px 1px 0 #00000042;
     }
 
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+    .header{
+        background-position: center;
+        background-image: url(./../../assets/images/bg.webp);
+    }
+    .header__container--text{
+        width: 45%;
+        height: auto;
+
+        h2 {
+            margin: .7em 0;
+        }
+    }
 }
