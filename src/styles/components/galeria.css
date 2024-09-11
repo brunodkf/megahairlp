@@ -1,7 +1,7 @@
 .galeria{
     padding: 5em 0;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(110deg, rgba(0, 0, 0, 1) 0%, rgba(40, 39, 39, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background: rgb(40,39,39);
+    background: linear-gradient(180deg, rgba(40,39,39,1) 28%, rgba(0,0,0,1) 90%, rgb(19, 18, 18) 100%);
 }
 
 .fotos {
