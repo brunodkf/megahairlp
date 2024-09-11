@@ -1,0 +1,35 @@
+.about {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(110deg, rgba(0, 0, 0, 1) 0%, rgba(40, 39, 39, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.video__container {
+    width: 100vw;
+    height: 100vh;
+
+    h2 {
+        text-align: center;
+        color: var(--amarelo-escuro);
+        padding-top: 2em;
+    }
+
+    .midias {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+}
+
+.about__container {
+    width: 100vw;
+    height: 100vh;
+
+    h2 {
+        text-align: center;
+        color: var(--amarelo-escuro);
+        padding-top: 2em;
+    }
+
+}
