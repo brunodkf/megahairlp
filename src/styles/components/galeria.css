@@ -1,0 +1,13 @@
+.galeria{
+    padding: 5em 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(110deg, rgba(0, 0, 0, 1) 0%, rgba(40, 39, 39, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 15px;
+}

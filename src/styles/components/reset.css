@@ -89,6 +89,8 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 20px;
     background-color: var(--preto);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(110deg, rgba(0, 0, 0, 1) 0%, rgba(40, 39, 39, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 img{

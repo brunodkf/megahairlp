@@ -1,0 +1,39 @@
+.mentoria {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(110deg, rgba(0, 0, 0, 1) 0%, rgba(40, 39, 39, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.mentoria__container{
+    padding: 3em 0;
+}
+
+.mentoria__text{
+    padding-bottom: 2em;
+
+    h2{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    p{
+        margin-bottom: 1em;
+    }
+
+    b{
+        color: var(--amarelo-escuro);
+    }
+
+    a {
+        display: block;
+        margin-top: 2em;
+        text-align: center;
+        color: var(--branco);
+        background: rgb(221, 183, 126);
+        background: linear-gradient(50deg, rgba(221, 183, 126, 1) 0%, rgba(218, 152, 54, 1) 63%);
+        text-shadow:
+        1px 1px 0 #00000042,
+        -1px -1px 0 #00000042,
+        1px -1px 0 #00000042,
+        -1px 1px 0 #00000042;
+    }
+}
