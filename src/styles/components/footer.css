@@ -82,3 +82,16 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    .footer__container {
+        .sac {
+            width: 80%;
+        }
+
+        .wpp{
+            width: 60%;
+            padding: .3em 0;
+        }
+    }
+}
