@@ -4,9 +4,9 @@ const videos = [];
 
 midias.forEach(e => {
     e.addEventListener('click', (event) => {
-        if(event.target.paused){
+        if (event.target.paused) {
             e.play();
-        }else{
+        } else {
             e.pause();
             event.target.currentTime = 0;
         }
@@ -34,15 +34,15 @@ const ativarContador = () => {
             }, 50)
         }
 
-        if(e.classList.contains('dias')){
+        if (e.classList.contains('dias')) {
             increment(date.getDate(), diasFaltam)
-        }else if(e.classList.contains('horas')){
+        } else if (e.classList.contains('horas')) {
             increment(0, 19);
-        }else if(e.classList.contains('min')){
+        } else if (e.classList.contains('min')) {
             increment(0, 26);
         }
-        
-       
+
+
     })
 }
 
@@ -65,27 +65,21 @@ const btnForm = document.querySelector('[data-form]');
 const exitForm = document.querySelector('.form__title button')
 const sectionForm = document.querySelector('.form');
 const corpoSite = document.querySelector('html');
-const submitForm = document.querySelector('.contato__form--submit')
 
 
-btnForm.addEventListener('click', ()=>{
+btnForm.addEventListener('click', () => {
     corpoSite.style = 'overflow: hidden;';
 
     sectionForm.classList.add('active');
 })
 
-exitForm.addEventListener('click', ()=>{
-    sectionForm.classList.remove('active'); 
+exitForm.addEventListener('click', () => {
+    sectionForm.classList.remove('active');
     corpoSite.removeAttribute("style");
 })
 
-submitForm.addEventListener('click', ()=>{
-    window.location.assign("https://pay.kiwify.com.br/gOATscR");
-    
-    if(document.querySelector('.teste').value != ''){
-        console.log('FOI')
-    }else{
-        console.log('Formulário não preenchido')
-    }
+document.querySelector('.contato__form').addEventListener('submit', (e) => {
+    e.preventDefault;
+    window.location.href = 'https://pay.kiwify.com.br/gOATscR';
 })
 

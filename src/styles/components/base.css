@@ -51,6 +51,7 @@
     font-family: var(--fonte-principal);
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
     letter-spacing: 1.2px;
     font-weight: 600;
     padding: .8em 4em;
