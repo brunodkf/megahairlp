@@ -55,7 +55,7 @@
     }
     a:hover{
         transition: ease-in .2s;
-        font-size: 1.1em;
+        transform: scale(1.05);
         background: linear-gradient(50deg, rgb(221, 173, 101) 0%, rgb(207, 132, 19) 63%); 
     }
 }

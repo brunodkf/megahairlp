@@ -217,6 +217,32 @@
     </div>
   </section>
 
+  <section class="form">
+    <div class="form__container">
+
+      <div class="form__title">
+        <button>X</button>
+        <h2>Preencha os dados abaixo:</h2>
+      </div>
+
+      <form class="contato__form">
+        <label class="contato__form--label" for="firstname">Nome : </label>
+        <input placeholder="Digite seu nome" class="contato__form--campo  teste" type="text" name="firstname" required>
+        <br>
+        <label class="contato__form--label" for="email">Email : </label>
+        <input placeholder="Digite seu email" class="contato__form--campo" type="email" name="email" required>
+        <br>
+        <label class="contato__form--label" for="phone">Telefone : </label>
+        <input placeholder="(xx) xxxxx-xxxx" class="contato__form--campo" type="tel" name="phone" required>
+        <br>
+
+        <input class="contato__form--submit cta" type="submit" value="Continue" required>
+
+        <p>Clicando no botão, você condorca com os nossos <a href="#">termos</a></p>
+      </form>
+    </div>
+  </section>
+
   <section class="footer" id="footer">
     <div class="footer__container container">
       <h2>Garanta sua vaga entre as 10 disponíveis!</h2>
@@ -224,7 +250,7 @@
       <p class="valor">12x de R$ 300,91</p>
       <small>ou R$ 2.997,00</small>
 
-      <a href="https://pay.kiwify.com.br/gOATscR" class="cta">
+      <a class="cta" data-form>
         GARANTIR MINHA VAGA
       </a>
 

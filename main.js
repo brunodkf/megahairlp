@@ -4,7 +4,6 @@ const videos = [];
 
 midias.forEach(e => {
     e.addEventListener('click', (event) => {
-        console.log(event)
         if(event.target.paused){
             e.play();
         }else{
@@ -23,9 +22,6 @@ const contadorNumeros = document.querySelectorAll('.contador__numero');
 const diaAteEvento = 50;
 const date = new Date();
 const diasFaltam = diaAteEvento - date.getDate()
-
-
-console.log(diaAteEvento - date.getDate())
 
 const ativarContador = () => {
     contadorNumeros.forEach((e) => {
@@ -59,4 +55,37 @@ const observer = new IntersectionObserver(e => {
     threshold: 0
 })
 
-observer.observe(contadorContainer)
+observer.observe(contadorContainer);
+
+
+
+// Formulário
+
+const btnForm = document.querySelector('[data-form]');
+const exitForm = document.querySelector('.form__title button')
+const sectionForm = document.querySelector('.form');
+const corpoSite = document.querySelector('html');
+const submitForm = document.querySelector('.contato__form--submit')
+
+
+btnForm.addEventListener('click', ()=>{
+    corpoSite.style = 'overflow: hidden;';
+
+    sectionForm.classList.add('active');
+})
+
+exitForm.addEventListener('click', ()=>{
+    sectionForm.classList.remove('active'); 
+    corpoSite.removeAttribute("style");
+})
+
+submitForm.addEventListener('click', ()=>{
+    window.location.assign("https://pay.kiwify.com.br/gOATscR");
+    
+    if(document.querySelector('.teste').value != ''){
+        console.log('FOI')
+    }else{
+        console.log('Formulário não preenchido')
+    }
+})
+

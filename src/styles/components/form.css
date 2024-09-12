@@ -1,0 +1,116 @@
+html{
+    position: relative;
+}
+.form{
+    background: rgba(27, 27, 27, 0.637);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.form.active{
+    display: flex;
+    animation: appear .5s;
+    transition: ease-in-out 2s;
+}
+
+
+.form__container{
+    width: 90%;
+    background-color: var(--branco);
+    color: var(--preto);
+    padding: 1em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.4em;
+}
+
+.form__title button{
+    background-color: transparent;
+    border: none;
+    
+    align-self: flex-end;
+    
+    font-family: 'Gotham-Bold';
+    font-size: 1.6em;
+    padding-right: .5em;
+    margin-bottom: 1em;
+}
+.form__title h2{
+    color: var(--preto);
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.contato__form{
+    width: 100%;
+}
+.contato__form--label{
+    display: none;
+}
+.contato__form--campo{
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 1em;
+    background-color: transparent;
+    padding-bottom: .5em;
+    border: none;
+    border-bottom: solid 1px var(--amarelo-escuro);
+    outline: none;
+}
+
+.contato__form--submit{
+    width: 100%;
+    background: linear-gradient(50deg, rgba(221, 183, 126, 1) 0%, rgba(218, 152, 54, 1) 63%);
+    border: none !important;
+    margin-top: 1.2em;
+    padding: 1em;
+}
+
+.contato__form p{
+    color: var(--preto);
+    font-size: .7em;
+    margin-top: 1em;
+}
+
+
+
+
+@media screen and (min-width: 640px){
+    .form__container{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .form__container{
+        width: 50%;
+        max-width: 520px;
+    }
+}
