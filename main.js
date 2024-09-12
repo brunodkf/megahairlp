@@ -78,8 +78,10 @@ exitForm.addEventListener('click', () => {
     corpoSite.removeAttribute("style");
 })
 
+const redirect = 'https://pay.kiwify.com.br/gOATscR';
+
 document.querySelector('.contato__form').addEventListener('submit', (e) => {
     e.preventDefault;
-    window.location.href = 'https://pay.kiwify.com.br/gOATscR';
+    window.open(redirect, '_black');
 })
 
